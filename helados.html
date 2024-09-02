@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Helados</title>
+    <script src="js/iniciosesion.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="sign-in.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   </head>
+
+  <style>
+    .boton-rosado {
+      background-color:#e76982; /* Color de fondo rosado */
+        color: white; /* Color del texto */
+        border: white; /* bordes blancos */
+        padding: 10px 20px; /* Espaciado interno */
+        text-align: center; /* Alineación del texto */
+        font-style:italic;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: inline-block; /* Para que se comporte como botón */
+        font-size: 16px; /* Tamaño de la fuente */
+        margin: 4px 2px; /* Espaciado externo */
+        cursor: pointer; /* Cursor de puntero */
+        border-radius: 20px; /* Bordes redondeados */
+        }
+
+        .boton-rosado:hover {
+        background-color:#e598a7; /* Color de fondo rosado */
+            transition: 2s all;
+            transform:scale(1.1);
+        }
+        #botonArriba {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          width: 40px;
+          color: black;
+          cursor: pointer;
+          font-size: 24px; 
+        }
+  </style>
+
+  <body style="font-style: italic; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+
+    <header class="text-white" style="background-color:#e88297;" id="principio">
+        <div class="container py-2 text-center">
+            <div class="row">
+                <div class="col">
+                  <a href="index.html"class="d-block text-white" style="text-align: left;"><i class="fas fa-arrow-left"></i></a>
+                  <h8> &hearts;<em> </em> UN MUNDO DE POSTRES PARA DELEITAR TUS SENTIDOS</h8> 
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class=" text-white" style="background-color:white; font-style: italic; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        <div class="container">
+            <div class="row">
+                <div class="col text-">
+                  <img class="d-block w-100" src="logo pagina/7.png">
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <div class="py-4 px-5 text-center" style="background-color: #F4C3CD;">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Copa Dulce Tentación</h1>
+            <br>
+            <p>Una irresistible combinación de helado de vainilla y flan cremoso, adornada con una generosa capa de caramelo. Un postre perfecto para los amantes del dulce</p>
+            <br>
+            <img style= "width: 300px; height: 300px;" src="https://content-cocina.lecturas.com/medio/2021/07/13/copa-de-helado-con-flan_5be870a7_800x800.jpg">
+            <br>
+            <a class="boton-rosado" data-bs-toggle="modal" data-bs-target="#compras"> <!--se trae primero lo que de va a trabajar(en este caso el modal) luego se trae la informacion con la que se va a trabajar (target)-->
+              <i class="bi bi-cart4"></i>
+            </a>
+          </div>
+          <div class="col">
+            <h1>Copa Frutas Exóticas</h1>
+            <br>
+            <p>Deléitate con la frescura del helado de frutas tropicales, coronado con trozos de frutas frescas y una ligera salsa de mango. Una explosión de sabor y frescura en cada bocado.</p>
+            <br>
+            <img style= "width: 300px; height: 300px;" src="https://img.freepik.com/fotos-premium/servicio-copas-tipo-helado-comer-tiendas-cafes_520719-223.jpg">
+            <br>
+            <a class="boton-rosado" data-bs-toggle="modal" data-bs-target="#compras"> <!--se trae primero lo que de va a trabajar(en este caso el modal) luego se trae la informacion con la que se va a trabajar (target)-->
+              <i class="bi bi-cart4"></i>
+            </a>
+          </div>
+          <div class="col">
+            <h1>Copa Delicia de Fresas</h1>
+            <br>
+            <p>Deléitate con helado cremoso cubierto de fresas frescas y jugosas, acompañado de una ligera capa de salsa de fresa. Un postre refrescante y dulce que no podrás resistir</p>
+            <br>
+            <img style= "width: 300px; height: 300px;" src="https://img.freepik.com/fotos-premium/copa-helado-fresas-encima_973047-42087.jpg">
+            <br>
+            <a class="boton-rosado" data-bs-toggle="modal" data-bs-target="#compras"> <!--se trae primero lo que de va a trabajar(en este caso el modal) luego se trae la informacion con la que se va a trabajar (target)-->
+              <i class="bi bi-cart4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+         
+    <div class="py-4 px-5 text-center" style="background-color: #ffffff;">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Copa Triple Delicia</h1>
+            <br>
+            <p>Tres bolas de helado de chocolate, vainilla y fresa, servidas con una generosa capa de nata montada, sirope de chocolate y una cereza en la cima. Un clásico que nunca falla.</p>
+            <br>
+            <img style= "width: 300px; height: 300px;" src="https://img.freepik.com/fotos-premium/tazon-helado-helado-chocolate-fresas_973047-46357.jpg">
+            <br>
+            <a class="boton-rosado" data-bs-toggle="modal" data-bs-target="#compras"> <!--se trae primero lo que de va a trabajar(en este caso el modal) luego se trae la informacion con la que se va a trabajar (target)-->
+              <i class="bi bi-cart4"></i>
+            </a>
+          </div>
+          <div class="col">
+            <h1>Copa Tropical</h1>
+            <br>
+            <p>Sumérgete en los sabores exóticos con esta copa de helado de frutas, adornada con trozos de fruta fresca. Una explosión de frescura y dulzura en cada bocado.</p>
+            <br>
+            <img style= "width: 300px; height: 300px;" src="https://media-cdn.tripadvisor.com/media/photo-p/15/4d/c4/46/copa-de-helado-y-frutas.jpg">
+            <br>
+            <a class="boton-rosado" data-bs-toggle="modal" data-bs-target="#compras"> <!--se trae primero lo que de va a trabajar(en este caso el modal) luego se trae la informacion con la que se va a trabajar (target)-->
+              <i class="bi bi-cart4"></i>
+            </a>
+          </div>
+          <div class="col">
+            <h1>Copa Vainilla Rubí</h1>
+            <br>
+            <p>Disfruta de la suavidad del helado de vainilla con un toque de salsa de frambuesa y crujientes trozos de galleta. Un equilibrio perfecto entre dulce y ácido que te encantará.</p>
+            <br>
+            <img style= "width: 300px; height: 300px;" src="https://img.freepik.com/fotos-premium/copa-helado-bola-helado-vainilla-salsa-frambuesa_737761-752.jpg">
+            <br>
+            <a class="boton-rosado" data-bs-toggle="modal" data-bs-target="#compras"> <!--se trae primero lo que de va a trabajar(en este caso el modal) luego se trae la informacion con la que se va a trabajar (target)-->
+              <i class="bi bi-cart4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--compra -->
+    <div class="modal fade" id="compras"data-bs-backdrop="static"> <!--el fade hace una transicion para que no salga tan brusca la ventana-->
+      <div class="modal-dialog modal-s">
+        <div class="modal-content">
+          <div class="modal-header text-white" style="background-color: #e88297;">
+            <h5 class="modal-title">Compras</h5>
+            <button class="btn-close invisible " data-bs-dismiss="modal">
+              <i class="bi bi-x-square text-white visible"></i>
+            </button>
+          </div>
+          <form class="was-validated">
+            <div class="modal-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre completo" required>
+                    <label for="direccion">Direccion de Residencia</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Ingrese su direccion de residencia" required>
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electronico"required>
+                    <label for="tel">Telefono</label>
+                    <input type="number" class="form-control" id="telefono" placeholder="Ingrese su numero telefonico" required>
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" class="form-control" id="cantidad" placeholder="Ingrese la cantidad de productos" required>
+                    <label for="cantidad">Metodo de Pago</label required>
+                    <select class="form-select" aria-label="Default select example" required>
+                      <option selected>seleccionar</option > 
+                      <option value="1">Tarjeta credito o debito</option>
+                      <option value="2">PayPal</option>
+                      <option value="3">Nequi</option>
+                      <option value="4">PSE</option>
+                      <option value="5">Contra Entrega</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="boton-rosado" type="submit">comprar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <!--pie de pagina-->
+    <footer class="text-white mt-1 p-1" style="background-color:#e88297;">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div style="flex: 1 1 300px; margin: 10px;">
+              <h3>Nosotros</h3>
+              <p>Somos una empresa dedicada a endulzar tus momentos especiales con los mejores postres artesanales. Nuestro compromiso es ofrecer productos frescos y de la más alta calidad, elaborados con ingredientes seleccionados cuidadosamente.</p>
+            </div>
+          </div>
+          <div class="col-12" style="flex: 1 1 300px; margin: 10px;">
+            <h3>Contáctenos</h3>
+            <p>¿Tienes alguna pregunta o necesitas hacer un pedido especial? ¡Nos encantaría saber de ti!</p>
+            <ul style="list-style-type: none; padding: 0;">
+              <li><strong>Email:</strong> contacto@elparaisodeldulce.com</li>
+              <li><strong>Teléfono:</strong> +1 234 567 890</li>
+              <li><strong>Dirección:</strong> Calle Dulce 123, Medellin, Colombia</li>
+            </ul>
+          </div>
+        </div>
+        <p style="text-align: center; margin-top: 20px; font-size: 14px;"> Copyright &copy; El Paraíso Del Dulce. Todos los derechos reservados.</p>
+      </div>
+      <div class="container text-center">
+        <a  href=https://www.facebook.com/ class="text-white bi-facebook"></a>
+        <a  href=https://www.instagram.com/ class="text-white bi bi-instagram"></a>
+        <a  href=https://web.whatsapp.com/ class="text-white bi bi-whatsapp"></a>
+      </div>
+    </footer>
+    <a href="#principio"><i class="bi bi-arrow-up-circle" id="botonArriba"></i> </a>
+  </body>
+</html> 

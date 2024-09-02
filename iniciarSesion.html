@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <title>Inicio de Sesion</title>
+    <script src="js/iniciosesion.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="sign-in.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <style>
+      .boton-rosado {
+      background-color:#e76982; /* Color de fondo rosado */
+        color: white; /* Color del texto */
+        border: white; /* bordes blancos */
+        padding: 10px 20px; /* Espaciado interno */
+        text-align: center; /* Alineación del texto */
+        text-decoration: none;
+        font-style:italic;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: inline-block; /* Para que se comporte como botón */
+        font-size: 16px; /* Tamaño de la fuente */
+        margin: 4px 2px; /* Espaciado externo */
+        cursor: pointer; /* Cursor de puntero */
+        border-radius: 20px; /* Bordes redondeados */
+        }
+
+        .boton-rosado:hover {
+        background-color:#e598a7; /* Color de fondo rosado */
+            transition: 2s all;
+            transform:scale(1.1);
+        }
+
+      .login {
+        position: absolute;
+        top:47%;
+        left:50%;
+        transform: translate(-50% ,-50%);
+        width:420px;
+        height:530px;
+        border-radius: 10px;
+        border: 2px solid rgba(255, 255, 255, .2); /*bordes */
+        backdrop-filter: blur(20px); /*opacar el login*/
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);/*sombreado alrededor del login*/
+        padding: 30px 40px;
+        background-color:transparent;
+      }
+      
+      .bg-image {
+        background-image: url('https://img.freepik.com/free-vector/watercolor-sugar-cotton-clouds-background_52683-80661.jpg?t=st=1718347799~exp=1718351399~hmac=dd0ecc45ba978c50a1d23596e7f726761dc0de0b421090cc8748a9117db0b740&w=996');
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Adjust height as needed */
+      } 
+
+      .footer {
+        background-color: #e88297;
+        text-align: center;
+        position: absolute;
+        padding: 1em 0;
+        bottom: 0;
+        width: 100%;
+      }
+
+      </style>
+  </head>
+  <body class="bg-image" style="font-style: italic; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    <header class="text-white" style="background-color:#e88297;">
+      <div class="container py-2 text-center">
+          <div class="row">
+              <div class="col">
+                  <h8> &hearts;<em> </em> UN MUNDO DE POSTRES PARA DELEITAR TUS SENTIDOS</h8> 
+              </div>
+          </div>
+      </div>
+    </header>
+    
+
+    <div class="login">
+        <form name="form1" action="pagina2.html" method="post" onsubmit="return validarForm(this)" class="container"> <!-- el post envia informacion por el codigo, el get envia informacion por la url y se ven los datos.... cuando den clic en onsubmit se envia la informacion, con el return se comprueba si es verdadero o falso -->
+          <div class="container">
+            <a href="index.html"class="text-white"><i class="fas fa-arrow-left"></i></a>
+          </div>
+          <div class="text-black" style="text-align: center;">
+            <img class="mb-4" src="https://cdn-icons-png.flaticon.com/128/8082/8082361.png" alt="" width="130" height="110">
+            <h1 class="h3 mb-3 fw-normal">Inicio de sesion</h1>
+          </div>
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="usuario" required>
+            <label for="floatingInput">Correo Electronico</label>
+          </div>
+          <br>
+          <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" required>
+              <label for="floatingPassword">Contraseña</label>
+          </div>
+          <br>
+          <div class="form-check text-start my-3">
+              <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Recordarme</label>
+          </div>
+          <button class="boton-rosado btn btn-primary w-100 py-2" type="submit">Iniciar Sesion</button>
+        </form>
+    </div>
+        
+        
+            
+    <!--pie de pagina-->
+    <footer class="footer">
+      <div class="container">
+        <p class="text-center text-white">
+          copyright &copy;  El Paraíso Del Dulce. 
+        </p>
+      </div>
+      <div class="container text-center">
+        <a  href=https://www.facebook.com/ class="text-white bi-facebook"></a>
+        <a  href=https://www.instagram.com/ class="text-white bi bi-instagram"></a>
+        <a  href=https://web.whatsapp.com/ class="text-white bi bi-whatsapp"></a>
+      </div>
+    </footer>
+  </body>
+</html>
